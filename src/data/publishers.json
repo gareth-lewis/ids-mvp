@@ -1,0 +1,42 @@
+[
+    {
+        "id": "beis",
+        "name": "Department for Business, Energy & Industrial Strategy"
+    },
+    {
+        "id": "dcms",
+        "name": "Department for Digital, Culture, Media & Sport"
+    },
+    {
+        "id": "defra",
+        "name": "Department for Environment, Food & Rural Affairs"
+    },
+    {
+        "id": "luhc",
+        "name": "Department for Levelling Up, Housing & Communities"
+    },
+    {
+        "id": "forest-research",
+        "name": "Forest Research"
+    },
+    {
+        "id": "hmrc",
+        "name": "HM Revenue & Customs"
+    },
+    {
+        "id": "met-office",
+        "name": "Met Office"
+    },
+    {
+        "id": "ni-stats-research-agency",
+        "name": "Northern Ireland Statistics and Research Agency"
+    },
+    {
+        "id": "ons",
+        "name": "Office for National Statistics"
+    },
+    {
+        "id": "welsh-gov",
+        "name": "Welsh Government"
+    }
+]

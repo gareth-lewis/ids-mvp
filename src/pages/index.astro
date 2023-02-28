@@ -48,7 +48,17 @@ import homedata from "../data/home.json";
         width: 56px;
         border: 0;
         border-radius: 8px;
-        background: url(/images/icons/forward.svg) no-repeat center center var(--color-purple);
+        background-image: url(/images/icons/forward.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: var(--color-purple);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .submit-search:hover {
+        transform: scale(1.2);
+        border-radius: 9px;
+        cursor: pointer;
     }
 
     .search {
@@ -58,8 +68,17 @@ import homedata from "../data/home.json";
         border-radius: 16px;
         box-sizing: border-box;
         padding: 0 12px 0 72px;
-        background: url(/images/icons/search.svg) no-repeat 16px var(--color-white);
+        background-image: url(/images/icons/search.svg);
+        background-repeat: no-repeat;
+        background-position: 16px;
+        background-color: var(--color-white);
         font-size: 24px;
+        transition: box-shadow 0.2s ease-in-out;
+    }
+
+    .search:focus {
+        box-shadow: 0 0 0 8px var(--color-orange);
+        outline: none;
     }
 
     section {

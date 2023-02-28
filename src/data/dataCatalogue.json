@@ -1,0 +1,72 @@
+[
+    {
+        "title": "2005 to 2019 local authority carbon dioxide (CO2) emissions dataset (revised)",
+        "description": "UK local authority and regional estimates of carbon dioxide emissions.",
+        "dateModified": "13 September 2021",
+        "publisher": "Department for Business, Energy & Industrial Strategy",
+        "theme": "Climate Change"
+    },
+    {
+        "title": "2005 to 2020 local authority greenhouse gas emissions dataset",
+        "description": "UK local authority greenhouse gas emissions national statistics.",
+        "dateModified": "20 October 2022",
+        "publisher": "Department for Business, Energy & Industrial Strategy",
+        "theme": "Climate Change"
+    },
+    {
+        "title": "2019 UK greenhouse gas emissions: final figures – dataset of emissions by end user",
+        "description": "Final estimates of UK territorial greenhouse gas emissions.",
+        "dateModified": "16 September 2021",
+        "publisher": "Department for Business, Energy & Industrial Strategy",
+        "theme": "Climate Change"
+    },
+    {
+        "title": "2019 UK greenhouse gas emissions: final figures - dataset of emissions by source",
+        "description": "Final estimates of UK territorial greenhouse gas emissions.",
+        "dateModified": "16 September 2021",
+        "publisher": "Department for Business, Energy & Industrial Strategy",
+        "theme": "Climate Change"
+    },
+    {
+        "title": "2020 UK greenhouse gas emissions: final figures - dataset of emissions by end user",
+        "description": "Final estimates of UK territorial greenhouse gas emissions.",
+        "dateModified": "18 May 2022",
+        "publisher": "Department for Business, Energy & Industrial Strategy",
+        "theme": "Climate Change"
+    },
+    {
+        "title": "2020 UK greenhouse gas emissions: final figures - dataset of emissions by source",
+        "description": "Final estimates of UK territorial greenhouse gas emissions.",
+        "dateModified": "18 May 2022",
+        "publisher": "Department for Business, Energy & Industrial Strategy",
+        "theme": "Climate Change"
+    },
+    {
+        "title": "Aged 16 to 64 years level 3 or above qualifications",
+        "description": "Percentage of the population aged 16 – 64 with National Vocational Qualification (NVQ) level 3 or above qualifications",
+        "dateModified": "21 Feb 2023",
+        "publisher": "Office for National Statistics",
+        "theme": "People in work"
+    },
+    {
+        "title": "Alcohol Bulletin",
+        "description": "Quarterly statistics from the 4 different alcohol duty regimes administered by HM Revenue and Customs.",
+        "dateModified": "3 February 2022",
+        "publisher": "HM Revenue & Customs",
+        "theme": "Trade"
+    },
+    {
+        "title": "Allocation for flood and coastal erosion risk management (Wales)",
+        "description": "Welsh allocation for flood and costal erosion risk management",
+        "dateModified": "26 Oct 2022",
+        "publisher": "Welsh Government",
+        "theme": "Cliamte Change"
+    },
+    {
+        "title": "Ambulance Response Times by Local Authority",
+        "description": "Average time taken by the appropriate response vehicle to respond to a medical incident.",
+        "dateModified": "7 Oct 2022",
+        "publisher": "Northern Ireland Statistics and Research Agency",
+        "theme": "Health care system"
+    }
+]

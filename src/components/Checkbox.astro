@@ -1,0 +1,39 @@
+---
+export interface Props {
+    id: string;
+    label: string;
+    checked?: boolean;
+}
+
+const { id, label, checked = false } = Astro.props;
+---
+
+<div class="checkbox-item">
+    <input type="checkbox" id={ id } checked={ checked } />
+    <label for={ id }>{ label }</label>
+</div>
+
+<style>
+    .checkbox-item {
+        display: grid;
+        grid-template-columns: 24px auto;
+        gap: 16px;
+        align-items: center;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 24px;
+        width: 24px;
+        border: 2px solid var(--color-border);
+        border-radius: 4px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    input[type="checkbox"]:checked {
+        border: 2px solid var(--color-purple);
+        background: url(/images/icons/check.svg) no-repeat center center var(--color-purple);
+    }
+</style>

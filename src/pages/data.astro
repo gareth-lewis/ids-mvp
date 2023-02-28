@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Checkbox from "../components/Checkbox.astro";
+import DatasetSummary from "../components/DatasetSummary.astro";
+
+import dataCatalogue from '../data/dataCatalogue.json';
+import publishers from '../data/publishers.json';
+---
+
+<Layout title="Data Catalogue" caption="Data Explorer">
+    <div class="layout">
+        <aside>
+            <h3>Refine Results</h3>
+
+            <label>Sort</label>
+            <select>
+                <option>Date last updated (descending)</option>
+            </select>
+
+            <section class="filter-section">
+                { publishers.map((publisher) => (
+                    <Checkbox id={ publisher.id } label={ publisher.name } checked={true} />
+                ))}
+            </section>
+        </aside>
+        <main>
+            <h3>Showing 1-10 of { dataCatalogue.length } datasets</h3>
+            { dataCatalogue.map((data) => (
+                <DatasetSummary
+                    title={ data.title }
+                    description={ data.description } 
+                    theme={ data.theme } 
+                    publisher={ data.publisher }
+                    dateModified={ data.dateModified }
+                />
+            ))}
+        </main>
+    </div>
+</Layout>
+
+<style>
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+    }
+
+    :global(.filter-section .checkbox-item) {
+        margin-bottom: 16px;
+    }
+
+    :global(main .dataset-summary:first-of-type) {
+        padding-top: 0;
+    }
+
+    :global(main .dataset-summary:last-of-type) {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+</style>

@@ -1,0 +1,75 @@
+---
+export interface Props {
+    title: string;
+    description: string;
+    dateModified: string;
+    publisher: string;
+    theme: string;
+}
+
+const { title, description, dateModified, publisher, theme } = Astro.props;
+---
+
+<div class="dataset-summary">
+    <div class="description">
+        <a href="#">{ title }</a>
+        <p>{ description }</p>
+    </div>
+    <div class="details">
+        <ul>
+            <li class="theme">{ theme }</li>
+            <li class="publisher">{ publisher }</li>
+            <li><time>{ dateModified }</time></li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    .dataset-summary {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        font-size: 16px;
+        padding: 16px 0;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .dataset-summary a {
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 19px;
+    }
+
+    .dataset-summary p {
+        color: var(--color-secondary-text);
+        margin: 8px 0 0;
+    }
+
+    .details ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: right;
+    }
+
+    .theme, .publisher {
+        margin-bottom: 8px;
+    }
+
+    .theme {
+        font-weight: 700;
+        color: var(--color-purple);
+        background-color: #E3DCEF;
+        display: inline-block;
+        padding: 0 16px;
+        border-radius: 40px;
+    }
+
+    .publisher {
+        font-weight: 700;
+    }
+
+    time {
+        color: var(--color-secondary-text)
+    }
+</style>

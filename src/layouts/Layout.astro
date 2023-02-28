@@ -1,0 +1,25 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import Heading from "../components/Heading.astro";
+
+export interface Props {
+    caption?: string;
+    title: string;
+}
+
+const { caption, title } = Astro.props;
+
+---
+
+<BaseLayout>
+    <div class="ids-container">
+        <Heading caption={ caption } title={ title } size="xl" />
+        <slot></slot>
+    </div>
+</BaseLayout>
+
+<style>
+    .ids-container {
+        margin-top: 40px;
+    }
+</style>

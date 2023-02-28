@@ -5,35 +5,64 @@ import DatasetSummary from "../components/DatasetSummary.astro";
 
 import dataCatalogue from '../data/dataCatalogue.json';
 import publishers from '../data/publishers.json';
+
+const publishersSet = new Set(dataCatalogue.map(dataaset => dataaset.publisher));
+const themeSet = new Set(dataCatalogue.map(dataaset => dataaset.theme))
+const uniquePublishers = [...publishersSet];
+const uniqueThemes = [...themeSet];
 ---
 
 <Layout title="Data Catalogue" caption="Data Explorer">
     <div class="layout">
         <aside>
-            <h3>Refine Results</h3>
+            <h1>Refine Results</h1>
 
-            <label>Sort</label>
-            <select>
-                <option>Date last updated (descending)</option>
-            </select>
+            <div class="filter-section">
+                <div class="select-list field">
+                    <label for="sort-order">Sort</label>
+                    <select id="sort-order">
+                        <option>Title (A - Z)</option>
+                        <option>Title (Z - A)</option>
+                        <option>Date Modified (Oldest - Newest)</option>
+                        <option>Date Modified (Newest - Oldest)</option>
+                        <option>Publisher (A - Z)</option>
+                        <option>Publisher (Z - A)</option>
+                    </select>
+                </div>
+            </div>
 
             <section class="filter-section">
-                { publishers.map((publisher) => (
-                    <Checkbox id={ publisher.id } label={ publisher.name } checked={true} />
-                ))}
+                <h2>Topics</h2>
+                <div class="checkbox-group">
+                    { uniqueThemes.map((theme) => (
+                        <Checkbox id={ theme } label={ theme } checked={true} />
+                    ))}
+                </div>
+            </section>
+
+            <section class="filter-section">
+                <h2>Publishers</h2>
+                <div class="checkbox-group">
+                    { uniquePublishers.map((publisher) => (
+                        <Checkbox id={ publisher } label={ publisher } checked={true} />
+                    ))}
+                </div>
             </section>
         </aside>
         <main>
-            <h3>Showing 1-10 of { dataCatalogue.length } datasets</h3>
-            { dataCatalogue.map((data) => (
-                <DatasetSummary
-                    title={ data.title }
-                    description={ data.description } 
-                    theme={ data.theme } 
-                    publisher={ data.publisher }
-                    dateModified={ data.dateModified }
-                />
-            ))}
+            <h1>Showing 1-10 of { dataCatalogue.length } datasets</h1>
+
+            <div class="dataset-list">
+                { dataCatalogue.map((data) => (
+                    <DatasetSummary
+                        title={ data.title }
+                        description={ data.description } 
+                        theme={ data.theme } 
+                        publisher={ data.publisher }
+                        dateModified={ data.dateModified }
+                    />
+                ))}
+            </div>
         </main>
     </div>
 </Layout>
@@ -43,10 +72,36 @@ import publishers from '../data/publishers.json';
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 40px;
+        padding-top: 40px;
+        border-top: 1px solid var(--color-border);
+        margin-top: 40px;
+    }
+
+    aside h1,
+    main h1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    .filter-section {
+        padding: 32px 0;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .filter-section h2 {
+        font-family: "Figtree", sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        margin: 0 0 16px;
     }
 
     :global(.filter-section .checkbox-item) {
         margin-bottom: 16px;
+    }
+
+    :global(.filter-section .checkbox-item:last-child) {
+        margin-bottom: 0;
     }
 
     :global(main .dataset-summary:first-of-type) {
@@ -56,5 +111,9 @@ import publishers from '../data/publishers.json';
     :global(main .dataset-summary:last-of-type) {
         padding-bottom: 0;
         border-bottom: 0;
+    }
+
+    .dataset-list {
+        margin-top: 64px;
     }
 </style>

@@ -44,7 +44,7 @@
     {
         "title": "Aged 16 to 64 years level 3 or above qualifications",
         "description": "Percentage of the population aged 16 – 64 with National Vocational Qualification (NVQ) level 3 or above qualifications",
-        "dateModified": "21 Feb 2023",
+        "dateModified": "21 February 2023",
         "publisher": "Office for National Statistics",
         "theme": "People in work"
     },
@@ -58,14 +58,14 @@
     {
         "title": "Allocation for flood and coastal erosion risk management (Wales)",
         "description": "Welsh allocation for flood and costal erosion risk management",
-        "dateModified": "26 Oct 2022",
+        "dateModified": "26 October 2022",
         "publisher": "Welsh Government",
-        "theme": "Cliamte Change"
+        "theme": "Climate Change"
     },
     {
         "title": "Ambulance Response Times by Local Authority",
         "description": "Average time taken by the appropriate response vehicle to respond to a medical incident.",
-        "dateModified": "7 Oct 2022",
+        "dateModified": "7 October 2022",
         "publisher": "Northern Ireland Statistics and Research Agency",
         "theme": "Health care system"
     }

@@ -134,3 +134,21 @@ sup {
 sub {
     bottom: -0.25em;
 }
+
+select {
+    border: 2px solid var(--color-black);
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 8px 40px 8px 16px;
+    box-sizing: border-box;
+    height: 40px;
+    display: inline-block;
+    background: url(/images/icons/down-chevron.svg) no-repeat right 8px center;
+    width: 100%;
+}
+
+.field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}

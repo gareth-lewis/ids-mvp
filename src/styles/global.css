@@ -1,0 +1,136 @@
+:root {
+    /* Text */
+    --color-text: var(--color-black);
+    --color-secondary-text: var(--color-dark-grey);
+
+    /* Links */
+    --color-link: var(--color-purple);
+    /* --color-link-hover: var(--color-dark-blue); */
+    --color-link-visited: var(--color-dark-purple);
+    --color-link-active: var(--color-black);
+
+    /* Border */
+    --color-border: var(--color-mid-grey);
+    --color-border-input: var(--color-black);
+
+    /* Focus */
+    /* --color-focus: var(--color-yellow);
+    --color-focus-text: var(--color-black); */
+
+    /* Error */
+    /* --color-error: var(--color-red); */
+
+    /* Success */
+    --color-success: var(--color-orange);
+
+    /* Brand */
+    --color-brand: var(--color-purple);
+
+    /* Palette  */
+    --color-black: #0B0C0C;
+    --color-dark-grey: #505A5F;
+    --color-bright-purple: #9900FF;
+    --color-purple: #624595;
+    --color-dark-purple: #391F51;
+    --color-green: #038838;
+    --color-orange: #E06C0F;
+    --color-grey: #808080;
+    --color-mid-grey: #B1B4B6;
+    --color-white: #FFFFFF;
+}
+
+@font-face {
+    font-family: 'Cal Sans';
+    font-weight: 600;
+    src: url(/fonts/cal-sans/cal-sans-semibold.woff2) format('woff2'), url(/fonts/cal-sans/cal-sans-semibold.woff) format('woff');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+    color: var(--color-text);
+    font-family: 'Figtree', sans-serif;
+    font-size: 19px;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
+
+.ids-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* ****************** */
+/* *   TYPOGRAPHY   * */
+/* ****************** */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 600;
+}
+
+.heading-xl {
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.heading-l {
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.heading-m {
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.heading-s {
+    font-family: 'Cal Sans', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+a {
+    color: var(--color-link);
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+sub, sup {
+    font-size: 16px;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}

@@ -1,0 +1,107 @@
+---
+export interface Props {
+    title: string;
+    caption?: string;
+    size: string;
+}
+
+const { title, caption, size } = Astro.props;
+---
+
+<div class={"heading " + size}>
+    <h2>{ caption }</h2>
+    <h1>{ title }</h1>
+</div>
+
+<style>
+    .heading h1,
+    .heading h2 {
+        margin: 0;
+    }
+
+    h2 {
+        color: var(--color-secondary-text);
+    }
+
+    .heading.xl h1 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .heading.l h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .heading.m h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .heading.s h1 {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .heading.xl h2 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .heading.l h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .heading.m h2 {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .heading.s h2 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    @media screen and (max-width: 480px) {
+        .heading.xl h1 {
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        .heading.l h1 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .heading.m h1 {
+            font-size: 19px;
+            line-height: 24px;
+        }
+
+        .heading.s h1 {
+            font-size: 16px;
+            line-height: 16px;
+        }
+
+        .heading.xl h2 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .heading.l h2 {
+            font-size: 19px;
+            line-height: 24px;
+        }
+
+        .heading.m h2 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .heading.s h2 {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+</style>

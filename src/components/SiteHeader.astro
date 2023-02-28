@@ -1,0 +1,62 @@
+---
+import logo from '/images/ids-logo.svg';
+---
+
+<header class="site-header">
+    <div class="ids-container">
+        <a href="#">
+            <img src={logo} alt="Integrated Data Service" />
+        </a>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Topics</a></li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<style>
+    header {
+        height: 80px;
+    }
+
+    .ids-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        margin: 24px 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 24px;
+    }
+
+    li {
+        height: 80px;
+        padding: 0 8px;
+        line-height: 80px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--color-secondary-text);
+    }
+
+    ul li.active {
+        border-bottom: 4px solid var(--color-purple);
+        box-sizing: border-box;
+    }
+
+    ul li.active a {
+        color: var(--color-purple);
+    }
+</style>

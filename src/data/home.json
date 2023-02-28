@@ -1,0 +1,106 @@
+[
+    {
+        "title": "topics",
+        "data": [
+            {
+                "label": "Climate Change",
+                "description": "Climate and weather, emissions, drivers, impacts, mitigation and adaptation"
+            },
+            {
+                "label": "Violence Against Women and Girls",
+                "description": "Domestic abuse, harassment, partner abuse, child abuse and sexual offences"
+            },
+            {
+                "label": "Business and Economy",
+                "description": "Small businesses, industry, imports, exports and trade"
+            },
+            {
+                "label": "Crime and Justice",
+                "description": "Courts, police, prison, offenders, borders and immigration"
+            },
+            {
+                "label": "Defence",
+                "description": "Armed forces, health and safety, search and rescue"
+            },
+            {
+                "label": "Digital Service Performance",
+                "description": "Cost, usage, completion rate, digital take-up, satisfaction"
+            },
+            {
+                "label": "Education",
+                "description": "Students, training, qualifications and the National Curriculum"
+            },
+            {
+                "label": "Environment",
+                "description": "Weather, flooding, rivers, air quality, geology and agriculture"
+            },
+            {
+                "label": "Government",
+                "description": "Staff numbers and pay, local councillors and department business plans"
+            },
+            {
+                "label": "Government Reference Data",
+                "description": "Trusted data that is referenced and shared across government departments"
+            },
+            {
+                "label": "Government Spending",
+                "description": "Includes all payments by government departments over £25,000"
+            },
+            {
+                "label": "Health",
+                "description": "Includes smoking, drugs, alcohol, medicine performance and hospitals"
+            },
+            {
+                "label": "Mapping",
+                "description": "Addresses, boundaries, land ownership, aerial photographs, seabed and land terrain"
+            },
+            {
+                "label": "Society",
+                "description": "Employment, benefits, household finances, poverty and population"
+            },
+            {
+                "label": "Towns and Cities",
+                "description": "Includes housing, urban planning, leisure, waste and energy, consumption"
+            },
+            {
+                "label": "Transport",
+                "description": "Transport"
+            }
+        ]
+    },
+    {
+        "title": "publishers",
+        "data": [
+            {
+                "label": "Department for Business, Energy & Industrial Strategy"
+            },
+            {
+                "label": "Department for Digital, Culture, Media & Sport"
+            },
+            {
+                "label": "Department for Environment, Food & Rural Affairs"
+            },
+            {
+                "label": "Department for Levelling Up, Housing & Communities"
+            },
+            {
+                "label": "Forest Research"
+            },
+            {
+                "label": "HM Revenue & Customs"
+            },
+            {
+                "label": "Met Office"
+            },
+            {
+                "label": "Northern Ireland Statistics and Research Agency"
+            },
+            {
+                "label": "Office for National Statistics"
+            },
+            {
+                "label": "Welsh Government"
+            }
+        ]
+    }
+]

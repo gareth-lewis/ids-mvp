@@ -1,0 +1,43 @@
+---
+import { SITE_PHASE } from "../consts";
+---
+
+<div class="phase-banner">
+    <div class="ids-container">
+        <p>
+            <span class="phase">{ SITE_PHASE }</span>
+            This is a new service - your <a href="mailto: gareth.lewis@gsscogs.uk">feedback</a> will help us improve it
+        </p>
+    </div>
+</div>
+
+<style>
+    .phase-banner {
+        background-color: var(--color-purple); 
+        color: var(--color-white);
+        padding: 12px 0;
+        position: relative;
+        z-index: 10;
+    }
+
+    .phase-banner a {
+        color: var(--color-white);
+    }
+
+    .phase {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--color-purple);
+        background-color: var(--color-white);
+        padding: 0px 8px;
+        margin-right: 16px;
+        line-height: 24px;
+        display: inline-block;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+    }
+</style>

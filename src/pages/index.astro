@@ -1,0 +1,62 @@
+---
+import HeroLayout from "../layouts/HeroLayout.astro";
+import homedata from "../data/home.json";
+
+console.log(homedata);
+---
+
+<HeroLayout>
+    { homedata.map((section) => (
+        <section>
+            <div class="section-summary">
+                <span class="number">{ section.data.length }</span>
+                <h1>{ section.title }</h1>
+            </div>
+            <div class="list">
+                { section.data.map((item) => (
+                    <div class="list-item">
+                        <a href="#">{ item.label }</a>
+                        { item.description && <p>{ item.description }</p>}
+                    </div>
+                ))}    
+            </div>
+        </section>
+    ))}
+</HeroLayout>
+
+<style>
+    section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 80px 0;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    section:first-child {
+        padding-top: 0;
+    }
+
+    .section-summary {
+        color: var(--color-purple);
+    }
+
+    .section-summary .number {
+        font-size: 128px;
+        line-height: 128px;
+        font-family: "Cal Sans", sans-serif;
+    }
+
+    .section-summary h1 {
+        margin: 0;
+    }
+
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 40px;
+    }
+
+    .list-item p {
+        margin: 8px 0 0;
+    }
+</style>

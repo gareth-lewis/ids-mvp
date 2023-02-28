@@ -1,0 +1,21 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import PhaseBanner from "../components/PhaseBanner.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import { SITE_PHASE } from "../consts";
+---
+
+<html lang="en">
+    <head>
+        <BaseHead />
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <SiteHeader />
+        { SITE_PHASE.toString() !== "Live" && <PhaseBanner />}
+        <slot></slot>
+    </body>
+</html>

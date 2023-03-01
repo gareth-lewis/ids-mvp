@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-erosion-risk-management-wales.json";
+import testData from "../../data/datasets/test.json";
 ---
 
 <Layout title={ datasetData.about.title } caption="Dataset">
@@ -16,10 +17,10 @@ import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-er
     <p class="dataset-description">{ datasetData.about.description }</p>
 
     <ul class="dataset-tabs">
-        <li class="active"><a href="#">Data</a></li>
-        <li><a href="#">Visualisation</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Versions</a></li>
+        <li id="data-table" class="tab active">Data</li>
+        <li id="visualisation" class="tab">Visualisation</li>
+        <li id="about" class="tab">About</li>
+        <li id="versions" class="tab">Versions</li>
     </ul>
 
     <div class="layout">
@@ -39,7 +40,7 @@ import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-er
             </div>
         </aside>
         <main>
-            <section class="data-table">
+            <section id="data-table-content" class="data-table tab-content">
                 <h1>{ datasetData.data.length } observations</h1>
 
                 <table>
@@ -61,8 +62,10 @@ import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-er
                     </tbody>
                 </table>
             </section>
-            <section class="visualisation">
-                <h1>Visualisation will go here!</h1>
+            <section id="visualisation-content" class="visualisation tab-content hidden">
+                <div class="visualisation-container">
+                    <canvas id="chart-canvas"></canvas>
+                </div>
             </section>
         </main>
     </div>
@@ -162,21 +165,76 @@ import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-er
 
     .dataset-tabs li.active {
         border-bottom: 4px solid var(--color-purple);
-    }
-
-    .dataset-tabs li.active a {
         color: var(--color-purple);
+        
     }
 
-    .dataset-tabs li a {
-        display: inline-block;
-        text-decoration: none;
+    .dataset-tabs li {
         font-weight: 700;
         color: var(--color-secondary-text);
         padding: 16px 0;
+        cursor: pointer;
+    }
+
+    .dataset-tabs li:not(.active):hover {
+        color: var(--color-black);
+        border-bottom: 1px solid var(--color-black);
     }
 
     .dataset-description {
         margin-bottom: 40px;
     }
+
+    .visualisation-container {
+        /* width: 100%; */
+    }
+
+    .hidden {
+        display: none;
+    }
 </style>
+
+<script>
+    import Chart from 'chart.js/auto';
+    import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-erosion-risk-management-wales.json";
+
+    const tabs = document.querySelectorAll('.tab');
+    const tabContent = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            switchTabs(e.target.id);
+        });
+    });
+
+    function switchTabs(id) {
+        tabs.forEach(tab => { tab.classList.remove("active") });
+        document.getElementById(id).classList.add("active");
+        tabContent.forEach(content => { content.classList.add("hidden") });
+        console.log(id + "-content");
+        document.getElementById(id + "-content").classList.remove("hidden");
+    }
+
+    (async function() {
+        const data = datasetData.data;
+
+        new Chart(
+            document.getElementById('chart-canvas') as HTMLCanvasElement,
+            {
+                type: 'line',
+                data: {
+                    labels: data.map(row => row.period),
+                    datasets: [
+                        {
+                            label: 'Period',
+                            data: data.map(row => row.allocatedSpending)
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true
+                }
+            }
+        );
+    })();
+</script>

@@ -30,37 +30,40 @@ import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-er
                 <div class="select-list field">
                     <label for="sort-order">Sort</label>
                     <select id="sort-order">
-                        <option>Title (A - Z)</option>
-                        <option>Title (Z - A)</option>
-                        <option>Date Modified (Oldest - Newest)</option>
-                        <option>Date Modified (Newest - Oldest)</option>
-                        <option>Publisher (A - Z)</option>
-                        <option>Publisher (Z - A)</option>
+                        <option>Default sorting</option>
+                        { datasetData.structure.map((column) => (
+                            <option>{ column.name }</option>
+                        ))}
                     </select>
                 </div>
             </div>
         </aside>
         <main>
-            <h1>{ datasetData.data.length } observations</h1>
+            <section class="data-table">
+                <h1>{ datasetData.data.length } observations</h1>
 
-            <table>
-                <thead>
-                    <tr>
-                        { datasetData.structure.map((column) => (
-                            <th class={column.type}>{ column.name }</th>
-                        ))}
-                    </tr>
-                </thead>
-                <tbody>
-                    { datasetData.data.map((dataset) => (
+                <table>
+                    <thead>
                         <tr>
                             { datasetData.structure.map((column) => (
-                                <td class={column.type}>{ dataset[column.id] }</td>
+                                <th class={column.type}>{ column.name }</th>
                             ))}
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        { datasetData.data.map((dataset) => (
+                            <tr>
+                                { datasetData.structure.map((column) => (
+                                    <td class={column.type}>{ dataset[column.id] }</td>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </section>
+            <section class="visualisation">
+                <h1>Visualisation will go here!</h1>
+            </section>
         </main>
     </div>
 </Layout>

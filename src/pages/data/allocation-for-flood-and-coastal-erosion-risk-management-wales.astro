@@ -1,0 +1,175 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-erosion-risk-management-wales.json";
+---
+
+<Layout title={ datasetData.about.title } caption="Dataset">
+
+    <p class="about-summary">
+        Published by 
+        <a href={ datasetData.about.publisher.url }>{ datasetData.about.publisher.name }</a>
+        at { datasetData.about.contentModified }
+        in the <a href="#">{ datasetData.about.theme }</a> theme
+        available under the <a href={ datasetData.about.licence.url }>{ datasetData.about.licence.name }</a> licence
+    </p>
+
+    <p class="dataset-description">{ datasetData.about.description }</p>
+
+    <ul class="dataset-tabs">
+        <li class="active"><a href="#">Data</a></li>
+        <li><a href="#">Visualisation</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Versions</a></li>
+    </ul>
+
+    <div class="layout">
+        <aside>
+            <h1>Refine Results</h1>
+
+            <div class="filter-section">
+                <div class="select-list field">
+                    <label for="sort-order">Sort</label>
+                    <select id="sort-order">
+                        <option>Title (A - Z)</option>
+                        <option>Title (Z - A)</option>
+                        <option>Date Modified (Oldest - Newest)</option>
+                        <option>Date Modified (Newest - Oldest)</option>
+                        <option>Publisher (A - Z)</option>
+                        <option>Publisher (Z - A)</option>
+                    </select>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <h1>Data</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        { datasetData.structure.map((column) => (
+                            <th class={column.type}>{ column.name }</th>
+                        ))}
+                    </tr>
+                </thead>
+                <tbody>
+                    { datasetData.data.map((dataset) => (
+                        <tr>
+                            { datasetData.structure.map((column) => (
+                                <td class={column.type}>{ dataset[column.id] }</td>
+                            ))}
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </main>
+    </div>
+</Layout>
+
+<style>
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+        padding-top: 40px;
+    }
+
+    aside h1,
+    main h1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    .filter-section {
+        padding: 32px 0;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .filter-section h2 {
+        font-family: "Figtree", sans-serif;
+        font-size: 19px;
+        font-weight: 600;
+        margin: 0 0 16px;
+    }
+
+    :global(.filter-section .checkbox-item) {
+        margin-bottom: 16px;
+    }
+
+    :global(.filter-section .checkbox-item:last-child) {
+        margin-bottom: 0;
+    }
+
+    :global(main .dataset-summary:first-of-type) {
+        padding-top: 0;
+    }
+
+    :global(main .dataset-summary:last-of-type) {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table thead tr th {
+        text-align: left;
+        padding-bottom: 16px;
+        border-bottom: 1px solid var(--color-border);
+        font-weight: 700;
+        padding-right: 32px;
+    }
+
+    table tbody tr td {
+        padding: 16px 0;
+        border-bottom: 1px solid var(--color-border);
+        padding-right: 32px;
+    }
+
+    table thead tr th:last-child,
+    table tbody tr td:last-child {
+        padding-right: 0;
+    }
+
+    table .number {
+        text-align: right;
+    }
+
+    .about-summary {
+        font-size: 16px;
+        color: var(--color-secondary-text);
+        margin: 32px 0 40px;
+    }
+
+    .dataset-tabs {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid var(--color-border);
+        display: flex;
+        gap: 40px;
+    }
+
+    .dataset-tabs li.active {
+        border-bottom: 4px solid var(--color-purple);
+    }
+
+    .dataset-tabs li.active a {
+        color: var(--color-purple);
+    }
+
+    .dataset-tabs li a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--color-secondary-text);
+        padding: 16px 0;
+    }
+
+    .dataset-description {
+        margin-bottom: 40px;
+    }
+</style>

@@ -1,0 +1,140 @@
+{
+    "id": "allocation-for-flood-and-coastal-erosion-risk-management-wales",
+    "about": {
+      "title": "Allocation for flood and coastal erosion risk management (Wales)",
+      "description": "Coastal erosional and risk management is a develoved competency, as such this report only covers the Welsh Government's allocated budget for Wales. This data was provided direct to Integrated Data Service Dissemination for inclusion in the Climate Change dashboard hosted at climate-change.data.gov.uk.",
+      "identifier": "https://gss-cogs.github.io/datasets/out/WelshGov-flood_defence_expenditure/2022/welshgov_flood_coastal_errosion_defence_allocation/allocation-for-flood-and-coastal-erosion-risk-management-wales.csv#dataset-catalog-entry",
+      "licence": {
+        "name": "Crown Copyright",
+        "url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+      },
+      "contentIssued": "26 October 2022 09:42",
+      "contentModified": "26 October 2022 09:42",
+      "publisher": {
+        "name": "Welsh Government",
+        "url": "https://www.gov.wales"
+      },
+      "keywords": ["budget allocation", "coastal erosion", "flood defence"],
+      "theme": "Climate Change"
+    },
+    "structure": [
+      {
+        "name": "Period",
+        "id": "period",
+        "type": "string"
+      },
+      {
+        "name": "Measure Type",
+        "id": "measureType",
+        "type": "string"
+      },
+      {
+        "name": "Allocated Spending",
+        "id": "allocatedSpending",
+        "type": "number"
+      },
+      {
+        "name": "Unit of Measure",
+        "id": "unitOfMeasure",
+        "type": "string"
+      }
+    ],
+    "data": [
+      {
+        "period": "2018-2019",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 56.89,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2007-2008",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 32.2,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2011-2012",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 51.9,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2022-2023",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 71.15,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2017-2018",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 54.18,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2021-2022",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 65.15,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2010-2011",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 61.5,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2016-2017",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 54.95,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2020-2021",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 55.2,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2015-2016",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 49.81,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2014-2015",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 51.93,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2013-2014",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 57.2,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2008-2009",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 35.7,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2012-2013",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 52.7,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2009-2010",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 44.4,
+        "unitOfMeasure": "GBP (millions)"
+      },
+      {
+        "period": "2019-2020",
+        "measureType": "Allocated Spending",
+        "allocatedSpending": 51.75,
+        "unitOfMeasure": "GBP (millions)"
+      }
+    ]   
+  }

@@ -41,7 +41,7 @@ import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-er
             </div>
         </aside>
         <main>
-            <h1>Data</h1>
+            <h1>{ datasetData.data.length } observations</h1>
 
             <table>
                 <thead>
@@ -78,6 +78,10 @@ import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-er
         font-size: 24px;
         line-height: 32px;
         margin: 0;
+    }
+
+    main h1 {
+        margin-bottom: 64px;
     }
 
     .filter-section {

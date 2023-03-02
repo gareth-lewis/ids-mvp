@@ -1,7 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import datasetData from "../../data/datasets/allocation-for-flood-and-coastal-erosion-risk-management-wales.json";
-import testData from "../../data/datasets/test.json";
 ---
 
 <Layout title={ datasetData.about.title } caption="Dataset">
@@ -31,9 +30,9 @@ import testData from "../../data/datasets/test.json";
                 <div class="select-list field">
                     <label for="sort-order">Sort</label>
                     <select id="sort-order">
-                        <option>Default sorting</option>
+                        <option value="default">Default sorting</option>
                         { datasetData.structure.map((column) => (
-                            <option>{ column.name }</option>
+                            <option value={ column.id }>{ column.name }</option>
                         ))}
                     </select>
                 </div>
@@ -43,7 +42,7 @@ import testData from "../../data/datasets/test.json";
             <section id="data-table-content" class="data-table tab-content">
                 <h1>{ datasetData.data.length } observations</h1>
 
-                <table>
+                <table class="dataset-data-table">
                     <thead>
                         <tr>
                             { datasetData.structure.map((column) => (
@@ -51,11 +50,11 @@ import testData from "../../data/datasets/test.json";
                             ))}
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="data-table-body">
                         { datasetData.data.map((dataset) => (
                             <tr>
                                 { datasetData.structure.map((column) => (
-                                    <td class={column.type}>{ dataset[column.id] }</td>
+                                    <td class={column.type}><span class="cell-placeholder"></span></td>
                                 ))}
                             </tr>
                         ))}
@@ -119,34 +118,6 @@ import testData from "../../data/datasets/test.json";
         border-bottom: 0;
     }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    table thead tr th {
-        text-align: left;
-        padding-bottom: 16px;
-        border-bottom: 1px solid var(--color-border);
-        font-weight: 700;
-        padding-right: 32px;
-    }
-
-    table tbody tr td {
-        padding: 16px 0;
-        border-bottom: 1px solid var(--color-border);
-        padding-right: 32px;
-    }
-
-    table thead tr th:last-child,
-    table tbody tr td:last-child {
-        padding-right: 0;
-    }
-
-    table .number {
-        text-align: right;
-    }
-
     .about-summary {
         font-size: 16px;
         color: var(--color-secondary-text);
@@ -192,6 +163,11 @@ import testData from "../../data/datasets/test.json";
     .hidden {
         display: none;
     }
+
+    @keyframes cell-placeholder {
+        0% { background-position: 100% 0 }
+        100% { background-position: -100% 0 }
+    }
 </style>
 
 <script>
@@ -200,26 +176,45 @@ import testData from "../../data/datasets/test.json";
 
     const tabs = document.querySelectorAll('.tab');
     const tabContent = document.querySelectorAll('.tab-content');
+    const dataTableBody = document.getElementById('data-table-body');
+    const sortOrder = document.getElementById('sort-order');
+    const originalSortOrdering = datasetData.data;
+    const chartContainer = document.getElementById('chart-canvas') as HTMLCanvasElement;
 
-    tabs.forEach(tab => {
-        tab.addEventListener('click', (e) => {
-            switchTabs(e.target.id);
+    function renderDataTable(sortOrder) {
+        var tableHtml = ``;
+
+        var sortedData;
+        sortedData = (sortOrder.value == "default" ? originalSortOrdering : changeSortOrder(sortOrder));
+
+        dataTableBody.innerHTML = "";
+
+        console.log(sortedData)
+
+        sortedData.map(row => {
+            tableHtml = tableHtml + `<tr>`;
+            datasetData.structure.map(column => {
+                tableHtml = tableHtml + `<td class="${ column.type }">${ row[column.id] }</td>`
+            });
+            tableHtml = tableHtml + `</tr>`;
         });
-    });
 
-    function switchTabs(id) {
-        tabs.forEach(tab => { tab.classList.remove("active") });
-        document.getElementById(id).classList.add("active");
-        tabContent.forEach(content => { content.classList.add("hidden") });
-        console.log(id + "-content");
-        document.getElementById(id + "-content").classList.remove("hidden");
+        dataTableBody.innerHTML = tableHtml;
     }
 
-    (async function() {
-        const data = datasetData.data;
+    function renderChart(sortOrder) {
+        var sortedData;
+        sortedData = (sortOrder.value == "default" ? originalSortOrdering : changeSortOrder(sortOrder));
+
+        const data = sortedData;
+
+        var chartStatus = Chart.getChart("chart-canvas");
+        if (chartStatus != undefined) {
+            chartStatus.destroy();
+        }
 
         new Chart(
-            document.getElementById('chart-canvas') as HTMLCanvasElement,
+            chartContainer,
             {
                 type: 'line',
                 data: {
@@ -236,5 +231,44 @@ import testData from "../../data/datasets/test.json";
                 }
             }
         );
+    }
+
+    sortOrder.addEventListener("change", (e) => {
+        console.log(`Sort order (onChange Event Listener): ${e.target.value}`);
+        renderDataTable(e.target.value);
+        renderChart(e.target.value);
+    });
+
+    function changeSortOrder(column) {
+        var sortedData = datasetData.data;
+        sortedData = sortedData.sort((a, b) => {
+            if (a[column] < b[column]) {
+                return -1;
+            }
+        });
+
+        return sortedData;
+    }
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            switchTabs(e.target.id);
+        });
+    });
+
+    function switchTabs(id) {
+        console.log(id);
+        tabs.forEach(tab => { tab.classList.remove("active") });
+        document.getElementById(id).classList.add("active");
+        tabContent.forEach(content => { content.classList.add("hidden") });
+        document.getElementById(id + "-content").classList.remove("hidden");
+    }
+
+    (async function() {
+        renderDataTable("default");
+    })();
+
+    (async function() {
+        renderChart("default");
     })();
 </script>

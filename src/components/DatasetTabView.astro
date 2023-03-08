@@ -1,0 +1,89 @@
+---
+import DatasetDataAbout from './DatasetDataAbout.astro';
+import DatasetDataTable from './DatasetDataTable.astro';
+import DatasetDataVisualisation from './DatasetDataVisualisation.astro';
+import DatasetFilters from './DatasetFilters.astro';
+
+export interface Props {
+    dataset: any;
+}
+
+const { dataset } = Astro.props;
+---
+<ul class="tabs">
+    <li id="data-table-tab" class="active">Data</li>
+    <li id="data-visualisation-tab">Visualisation</li>
+    <li id="data-about-tab">About</li>
+</ul>
+
+<div class="tab-view-container">
+    <DatasetFilters structure={ dataset.structure } data={ dataset.data } />
+
+    <section class="data-view">
+        <DatasetDataTable dataset={ dataset }/>
+    </section>
+    
+    <section class="visualisation-view hidden">
+        <DatasetDataVisualisation data={ dataset.data }/>
+    </section>
+    
+    <section class="about-view hidden">
+        <DatasetDataAbout about={ dataset.about } />
+    </section>
+</div>
+
+<script>
+    const tabs = document.querySelectorAll('.tabs li');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            switchTabs(e.target.id);
+        });
+    });
+
+    function switchTabs(id) {
+        tabs.forEach(tab => { tab.classList.remove("active") });
+        document.getElementById(id).classList.add("active");
+        // tabContent.forEach(content => { content.classList.add("hidden") });
+        // document.getElementById(id + "-content").classList.remove("hidden");
+    }
+</script>
+
+<style>
+     .tabs {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid var(--color-border);
+        display: flex;
+        gap: 40px;
+    }
+
+    .tabs li.active {
+        border-bottom: 4px solid var(--color-purple);
+        color: var(--color-purple);
+        
+    }
+
+    .tabs li {
+        font-weight: 700;
+        color: var(--color-secondary-text);
+        padding: 16px 0;
+        cursor: pointer;
+    }
+
+    .tabs li:not(.active):hover {
+        color: var(--color-black);
+        border-bottom: 1px solid var(--color-black);
+    }
+
+    .tab-view-container {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .tab-view-container .hidden {
+        display: none;
+    }
+</style>

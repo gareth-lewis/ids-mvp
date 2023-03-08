@@ -1,0 +1,1375 @@
+{
+    "id": "inland-energy-consumption-primary-fuel-input-basis-2021",
+    "about": {
+      "title": "Inland energy consumption: primary fuel input basis 2021",
+      "description": "An overview of the trends in energy consumption in the United Kingdom, focusing on: consumption, both primary and final by broad sector, as well as dependency rates of imports, fossil fuels and low carbon fuels.",
+      "identifier": "http://gss-data.org.uk/data/climate-change/beis-energy-trends-table-1-2-extract-2021/inland-energy-consumption-primary-fuel-input-basis-2021#dataset-catalog-entry",
+      "licence": "",
+      "contentIssued": "27 June 2013 08:30",
+      "contentModified": "30 January 2023 12:24",
+      "contact": "energy.stat@beis.gov.uk",
+      "publisher": {
+        "name": "Department for Business, Energy & Industrial Strategy",
+        "url": "https://www.gov.wales"
+      },
+      "creator": {
+        "name": "Department for Business, Energy & Industrial Strategy",
+        "url": "https://www.gov.wales"
+      },
+      "source": "",
+      "keywords": ["budget allocation", "coastal erosion", "flood defence"],
+      "theme": "Climate Change"
+    },
+    "structure": [
+      {
+        "name": "Reference Period",
+        "id": "referencePeriod",
+        "type": "number"
+      },
+      {
+        "name": "Fuel",
+        "id": "fuel",
+        "type": "string"
+      },
+      {
+        "name": "Measure Type",
+        "id": "measureType",
+        "type": "string"
+      },
+      {
+        "name": "Energy Consumption",
+        "id": "energyConsumption",
+        "type": "number"
+      },
+      {
+        "name": "Unit of Measure",
+        "id": "unitOfMeasure",
+        "type": "string"
+      }
+    ],
+    "data": [
+      {
+        "referencePeriod": 2021,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 7.08,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2010,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.17,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2002,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 20.1,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2013,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 15.44,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2001,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 2.52,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2012,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 8.1,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1999,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.22,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2002,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 2.76,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2013,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 9.09,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2003,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 20.05,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2014,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 13.84,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2020,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 8.21,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2003,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 3.12,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2014,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 10.71,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2004,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 18.16,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2015,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 15.47,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1999,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 35.99,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2020,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 50.67,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2005,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 18.37,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2016,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 15.39,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2004,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 3.48,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2015,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 12.45,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2006,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 17.14,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2017,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 15.13,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2009,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 31.2,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2010,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 70.24,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2021,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 54.56,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1998,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 40.96,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1995,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 21.26,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2005,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 4.17,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2016,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 13.56,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1995,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.68,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2007,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 14.03,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2018,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 14.06,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2019,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 6.13,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2008,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 38.16,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2006,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 4.44,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2000,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 76.71,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2011,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 67.81,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2017,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 14.28,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1997,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 41.27,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1996,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 22.18,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1996,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 45.89,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2007,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 4.65,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2018,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 16.08,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2008,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 11.91,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2019,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 12.09,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2018,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 8.71,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2001,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 75.87,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2007,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 40.95,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2012,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 67,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1996,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.8,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1997,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 21.99,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2008,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 6.06,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2019,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 16.77,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1998,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 23.44,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1995,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 49.57,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2009,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 15.24,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1997,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.92,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2002,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 73.48,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2013,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 65.78,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2017,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 10.31,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2006,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 43.35,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2016,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 12.71,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2005,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 39.85,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1999,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 22.41,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1998,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 2.04,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2003,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 73.03,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2014,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 66.02,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2009,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 6.72,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1999,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 2.28,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2015,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 25.13,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2004,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 39.07,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2004,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 75.06,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2015,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 67.41,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2016,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 68.32,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2014,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 31.5,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2003,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 40.49,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2005,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 78.23,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2006,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 77.35,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2017,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 69.5,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2020,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 68.5,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1995,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 75.79,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2013,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 39.05,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2002,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 37.72,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2012,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 40.91,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2001,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 40.77,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2007,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 76.31,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2018,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 68.82,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2010,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 93.56,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2021,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 72.75,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1996,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 76.01,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2008,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 74.38,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2019,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 67.94,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2011,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 32.26,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2000,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 38.54,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2000,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 95.85,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2011,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 77.65,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1997,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 73.6,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2009,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 70.87,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2021,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 5.85,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2010,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 32.62,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2001,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 95.56,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2012,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 73.25,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1998,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 75.35,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1999,
+        "fuel": "Petroleum",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 76.43,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2002,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 94.3,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2013,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 72.62,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2020,
+        "fuel": "Coal",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 5.64,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2003,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 94.62,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2014,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 66.12,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2004,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 96.63,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2015,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 68.1,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2005,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 94.3,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2016,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 76.39,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1995,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 71.27,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2006,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 89.39,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2017,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 74.36,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1996,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 83.18,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2020,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.54,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2007,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 90.2,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2018,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 73.74,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1999,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.52,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1997,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 83.93,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2010,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.23,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2021,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 2.11,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2008,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 93.1,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2019,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 72.69,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1998,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.51,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1998,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 87.31,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2009,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.25,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2000,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.24,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2011,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.54,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2009,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 86.2,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2019,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 7.06,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2008,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.05,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1999,
+        "fuel": "Natural Gas",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 92.51,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1997,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.42,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2001,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.9,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2012,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.02,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2018,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 6.45,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2007,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.87,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1996,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.33,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2002,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.73,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2013,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.24,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1995,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.45,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2003,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.17,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2014,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.75,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2017,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 5.76,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2006,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.75,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2016,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 4.54,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2005,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.68,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2004,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.65,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2015,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.81,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2015,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 4.65,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2004,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.6,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2005,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.72,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2016,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.53,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2017,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.26,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2014,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 3.61,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2003,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.38,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1995,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.4,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2020,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 10.72,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2006,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.65,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2007,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.45,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2018,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.65,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2020,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 17.25,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1996,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.44,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2013,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 3.02,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2002,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.52,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2010,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 13.92,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2021,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 9.88,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2010,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 7.59,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2008,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.97,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2021,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 17.82,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2000,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 19.63,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2019,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.83,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2011,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 15.62,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1997,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.42,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2012,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 2.29,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2001,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.43,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2009,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.24,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2001,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 20.8,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2012,
+        "fuel": "Nuclear",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 15.21,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2011,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.89,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2000,
+        "fuel": "Wind Solar and Hydro",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 0.51,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 1998,
+        "fuel": "Net Imports",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 1.06,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2000,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 2.28,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      },
+      {
+        "referencePeriod": 2011,
+        "fuel": "Bioenergy and Waste",
+        "measureType": "Energy Consumption",
+        "energyConsumption": 7.86,
+        "unitOfMeasure": "Millions of tonnes of oil equivalent"
+      }
+    ]
+  }

@@ -145,6 +145,16 @@ select {
     display: inline-block;
     background: url(/images/icons/down-chevron.svg) no-repeat right 8px center;
     width: 100%;
+    border-radius: 8px;
+}
+
+input {
+    border: 2px solid var(--color-black);
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 8px;
 }
 
 .field label {

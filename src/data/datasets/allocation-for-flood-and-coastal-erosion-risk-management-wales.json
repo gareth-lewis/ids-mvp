@@ -10,10 +10,16 @@
       },
       "contentIssued": "26 October 2022 09:42",
       "contentModified": "26 October 2022 09:42",
+      "contact": "",
       "publisher": {
         "name": "Welsh Government",
         "url": "https://www.gov.wales"
       },
+      "creator": {
+        "name": "",
+        "url": ""
+      },
+      "source": "https://www.gov.uk/government/statistics/total-energy-section-1-energy-trends",
       "keywords": ["budget allocation", "coastal erosion", "flood defence"],
       "theme": "Climate Change"
     },

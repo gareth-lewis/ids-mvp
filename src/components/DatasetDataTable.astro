@@ -1,0 +1,75 @@
+---
+export interface Props {
+    dataset: any;
+}
+
+const { dataset } = Astro.props;
+
+---
+
+<h1>{ dataset.data.length } observations</h1>
+
+<table class="dataset-data-table">
+    <thead>
+        <tr>
+            { dataset.structure.map((column) => (
+                <th class={column.type}>{ column.name }</th>
+            ))}
+        </tr>
+    </thead>
+    <tbody id="data-table-body">
+        <!-- { dataset.data.map((dataset) => (
+            <tr>
+                { dataset.structure.map((column) => (
+                    <td class={column.type}><span class="cell-placeholder"></span></td>
+                ))}
+            </tr>
+        ))} -->
+    </tbody> 
+</table>
+
+<style>
+    .dataset-data-table {
+        width: 100%;
+    }
+</style>
+
+<script define:vars={{ dataset: dataset }}>
+    const dataTableBody = document.getElementById('data-table-body');
+
+    (async function() {
+        renderDataTable("default");
+    })();
+
+    function renderDataTable(sortOrder) {
+        var tableHtml = ``;
+
+        var sortedData;
+        sortedData = (sortOrder.value == "default" ? dataset.data : changeSortOrder(sortOrder));
+
+        dataTableBody.innerHTML = "";
+
+        console.log(sortedData)
+
+        sortedData.map(row => {
+            tableHtml = tableHtml + `<tr>`;
+            dataset.structure.map(column => {
+                tableHtml = tableHtml + `<td class="${ column.type }">${ row[column.id] }</td>`
+            });
+            tableHtml = tableHtml + `</tr>`;
+        });
+
+        dataTableBody.innerHTML = tableHtml;
+    }
+
+    function changeSortOrder(column) {
+        var sortedData = dataset.data;
+        sortedData = sortedData.sort((a, b) => {
+            if (a[column] < b[column]) {
+                return -1;
+            }
+        });
+
+        return sortedData;
+    }
+</script>

@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Heading from "../components/Heading.astro";
+import DatasetTabView from "../components/DatasetTabView.astro";
+
+export interface Props {
+    dataset: any;
+}
+
+const { dataset } = Astro.props;
+---
+
+<BaseLayout>
+    <div class="ids-container">
+        <Heading caption="Dataset" title={ dataset.about.title } size="xl" />
+        <slot></slot>
+    </div>
+
+    <div class="ids-container">
+    
+        <p class="about-summary">
+            Published by 
+            <a href={ dataset.about.publisher.url }>{ dataset.about.publisher.name }</a>
+            at { dataset.about.contentModified }
+            in the <a href="#">{ dataset.about.theme }</a> theme
+            available under the <a href={ dataset.about.licence.url }>{ dataset.about.licence.name }</a> licence
+        </p>
+    
+        <p class="dataset-description">{ dataset.about.description }</p>
+
+        <DatasetTabView dataset={ dataset } />
+    </div>
+
+    
+</BaseLayout>
+
+<style>
+    .about-summary {
+        font-size: 16px;
+        color: var(--color-secondary-text);
+        margin: 32px 0 40px;
+    }
+
+    .dataset-description {
+        margin-bottom: 40px;
+    }
+</style>

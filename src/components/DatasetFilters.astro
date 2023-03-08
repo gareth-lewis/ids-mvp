@@ -1,0 +1,130 @@
+---
+import Checkbox from './Checkbox.astro';
+
+export interface Props {
+    structure: any;
+    data: any;
+}
+
+const { structure, data } = Astro.props;
+
+var filters = [];
+
+structure.map((filter) => {
+
+    var filterValueArray = []
+
+    data.map((d) => {
+        // console.log(d[filter.name])
+        filterValueArray.push(d[filter.id])
+    })
+
+    var uniqueValues = [...new Set(filterValueArray.map(item => item))];
+    // console.log(uniqueValues);
+
+    if (filter.type === "string") {
+        filters.push({
+            "id": filter.id,
+            "name": filter.name,
+            "type": filter.type,
+            "data": uniqueValues
+        });
+    } else if (filter.type === "number") {
+        filters.push({
+            "id": filter.id,
+            "name": filter.name,
+            "type": filter.type,
+            "data": [Math.min(...uniqueValues), Math.max(...uniqueValues)]
+        });
+    }
+});
+---
+
+<aside class="filters">
+    <h1>Refine Results</h1>
+
+    <div class="filter-layout">
+
+        <div class="select-list field">
+            <label for="sort-order">Sort</label>
+            <select id="sort-order">
+                <option value="default">Default sorting</option>
+                { structure.map((column) => (
+                    <option value={ column.id }>{ column.name }</option>
+                ))}
+            </select>
+        </div>
+
+        { filters.map((filter) => (
+            <div class="filter-section">
+                <h2>{ filter.name }</h2>
+                { filter.type === "string" &&
+                    <ul>
+                        { filter.data.map((value) => (
+                            <li>
+                                { filter.type === "string" && <Checkbox id="" label={ value } checked={true} /> }
+                                { filter.type === "number" && <input type="text" value={ value } /><input type="text" value={ value } />}
+                            </li>
+                        ))}
+                    </ul>
+                }
+                { filter.type === "number" &&
+                    <ul>
+                        <li class="range-input">
+                            <div class="field">
+                                <label for={ filter.id + "-from" }>From</label>
+                                <input type="text" name={ filter.id + "-from"} id={ filter.id + "-from"} value={ filter.data[0] } />
+                            </div>
+                            <div class="field">
+                                <label for={ filter.id + "-to" }>To</label>
+                                <input type="text" name={ filter.id + "-to"} id={ filter.id + "-to"} value={ filter.data[1] } />
+                            </div>
+                        </li>
+                    </ul>
+                }
+            </div>
+        ))}
+
+    </div>
+</aside>
+
+<style>
+    .filters {
+        width: 400px;
+        margin-right: 40px;
+    }
+
+    .filters h1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 0 32px;
+    }
+
+    .filters h2 {
+        font-size: 19px;
+        line-height: 24px;
+        margin: 0 0 16px;
+    }
+
+    .filter-layout {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    .filter-section ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .filter-section ul li {
+        margin-bottom: 16px;
+    }
+
+    .filter-section .range-input {
+        display: flex;
+        gap: 32px;
+        margin-bottom: 0;
+    }
+</style>
